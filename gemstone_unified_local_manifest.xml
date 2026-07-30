@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="crdroid"
+          fetch="https://github.com/crdroidandroid"
+          clone-depth="1" />
+
+  <remote name="xiaomi-sm6375-devs"
+          fetch="https://github.com/xiaomi-sm6375-devs"
+          clone-depth="1" />
+
+  <remote name="charvik"
+          fetch="https://github.com/IamCharvik"
+          clone-depth="1" />
+
+  <remote name="lineage"
+          fetch="https://github.com/LineageOS"
+          clone-depth="1" />
+
+  <!-- Device tree -->
+  <project name="STONE_DEVICE_TREE"
+           path="device/xiaomi/gemstone"
+           remote="charvik"
+           revision="lineage-23.2" />
+
+  <!-- Common device tree -->
+  <project name="android_device_xiaomi_sm6375-common"
+           path="device/xiaomi/sm6375-common"
+           remote="xiaomi-sm6375-devs"
+           revision="lineage-23.2" />
+
+  <!-- Device vendor tree -->
+  <project name="proprietary_vendor_xiaomi_gemstone"
+           path="vendor/xiaomi/gemstone"
+           remote="crdroid"
+           revision="16.0" />
+
+  <!-- Common vendor tree -->
+  <project name="proprietary_vendor_xiaomi_sm6375-common"
+           path="vendor/xiaomi/sm6375-common"
+           remote="crdroid"
+           revision="16.0" />
+
+  <!-- Custom kernel -->
+  <project name="android_kernel_xiaomi_moonstone"
+           path="kernel/xiaomi/sm6375"
+           remote="xiaomi-sm6375-devs"
+           revision="lineage-23.2" />
+
+  <!-- Xiaomi hardware support -->
+  <project name="android_hardware_xiaomi"
+           path="hardware/xiaomi"
+           remote="lineage"
+           revision="lineage-23.2" />
+</manifest>
