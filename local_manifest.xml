@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="crdroid"
+  <remote name="gemstone_crdroid"
           fetch="https://github.com/crdroidandroid"
           clone-depth="1" />
 
-  <remote name="xiaomi-sm6375-devs"
+  <remote name="gemstone_xiaomi_sm6375"
           fetch="https://github.com/xiaomi-sm6375-devs"
           clone-depth="1" />
 
-  <remote name="charvik"
+  <remote name="gemstone_charvik"
           fetch="https://github.com/IamCharvik"
           clone-depth="1" />
 
-  <remote name="lineage"
+  <remote name="gemstone_lineage"
           fetch="https://github.com/LineageOS"
           clone-depth="1" />
 
   <!-- Device tree -->
   <project name="STONE_DEVICE_TREE"
            path="device/xiaomi/gemstone"
-           remote="charvik"
+           remote="gemstone_charvik"
            revision="lineage-23.2" />
 
   <!-- Common device tree -->
   <project name="android_device_xiaomi_sm6375-common"
            path="device/xiaomi/sm6375-common"
-           remote="xiaomi-sm6375-devs"
+           remote="gemstone_xiaomi_sm6375"
            revision="lineage-23.2" />
 
   <!-- Device vendor tree -->
   <project name="proprietary_vendor_xiaomi_gemstone"
            path="vendor/xiaomi/gemstone"
-           remote="crdroid"
+           remote="gemstone_crdroid"
            revision="16.0" />
 
   <!-- Common vendor tree -->
   <project name="proprietary_vendor_xiaomi_sm6375-common"
            path="vendor/xiaomi/sm6375-common"
-           remote="crdroid"
+           remote="gemstone_crdroid"
            revision="16.0" />
 
   <!-- Custom kernel -->
   <project name="android_kernel_xiaomi_moonstone"
            path="kernel/xiaomi/sm6375"
-           remote="xiaomi-sm6375-devs"
+           remote="gemstone_xiaomi_sm6375"
            revision="lineage-23.2" />
 
   <!-- Xiaomi hardware support -->
   <project name="android_hardware_xiaomi"
            path="hardware/xiaomi"
-           remote="lineage"
+           remote="gemstone_lineage"
            revision="lineage-23.2" />
 </manifest>
