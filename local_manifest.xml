@@ -16,16 +16,10 @@
           fetch="https://github.com/LineageOS"
           clone-depth="1" />
 
-  <!-- Device tree -->
-  <project name="STONE_DEVICE_TREE"
+  <!-- Unified gemstone + SM6375 common device tree -->
+  <project name="Unified_SM6375_Device_Tree_Common-Gemstone"
            path="device/xiaomi/gemstone"
            remote="gemstone_charvik"
-           revision="lineage-23.2" />
-
-  <!-- Common device tree -->
-  <project name="android_device_xiaomi_sm6375-common"
-           path="device/xiaomi/sm6375-common"
-           remote="gemstone_xiaomi_sm6375"
            revision="lineage-23.2" />
 
   <!-- Device vendor tree -->
