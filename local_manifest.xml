@@ -31,7 +31,7 @@
   <!-- Common vendor tree -->
   <project name="proprietary_vendor_xiaomi_sm6375-common"
            path="vendor/xiaomi/sm6375-common"
-           remote="gemstone_crdroid"
+           remote="gemstone_charvik"
            revision="16.0" />
 
   <!-- Custom kernel -->
