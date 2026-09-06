@@ -29,7 +29,7 @@
   <!-- Device vendor tree -->
   <project name="proprietary_vendor_xiaomi_gemstone"
            path="vendor/xiaomi/gemstone"
-           remote="gemstone_crdroid"
+           remote="gemstone_charvik"
            revision="16.0" />
 
   <!-- Common vendor tree -->
