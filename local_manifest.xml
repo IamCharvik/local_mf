@@ -20,6 +20,20 @@
           fetch="https://github.com/LineageOS"
           clone-depth="1" />
 
+  <!-- Replace the stock HalogenOS projects with the Duress-enabled forks. -->
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/packages/apps/Settings" />
+
+  <project name="android_frameworks_base"
+           path="frameworks/base"
+           remote="gemstone_charvik"
+           revision="XOS-16.2" />
+
+  <project name="android_packages_apps_Settings"
+           path="packages/apps/Settings"
+           remote="gemstone_charvik"
+           revision="XOS-16.2" />
+
   <!-- Unified gemstone + SM6375 common device tree (XOS-adapted branch) -->
   <project name="Unified_SM6375_Device_Tree_Common-Gemstone"
            path="device/xiaomi/gemstone"
