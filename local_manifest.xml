@@ -20,11 +20,11 @@
           fetch="https://github.com/LineageOS"
           clone-depth="1" />
 
-  <!-- Unified gemstone + SM6375 common device tree -->
+  <!-- Unified gemstone + SM6375 common device tree (XOS-adapted branch) -->
   <project name="Unified_SM6375_Device_Tree_Common-Gemstone"
            path="device/xiaomi/gemstone"
            remote="gemstone_charvik"
-           revision="lineage-23.2" />
+           revision="xos-16.2" />
 
   <!-- Device vendor tree -->
   <project name="proprietary_vendor_xiaomi_gemstone"
