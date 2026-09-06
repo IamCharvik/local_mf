@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote name="gemstone_xos"
+          fetch="https://github.com/halogenOS"
+          clone-depth="1" />
+
   <remote name="gemstone_crdroid"
           fetch="https://github.com/crdroidandroid"
           clone-depth="1" />
