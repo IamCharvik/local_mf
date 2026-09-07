@@ -21,8 +21,8 @@
           clone-depth="1" />
 
   <!-- Replace the stock HalogenOS projects with the Duress-enabled forks. -->
-  <remove-project name="platform/frameworks/base" />
-  <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="android_frameworks_base" />
+  <remove-project name="android_packages_apps_Settings" />
 
   <project name="android_frameworks_base"
            path="frameworks/base"
