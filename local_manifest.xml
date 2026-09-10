@@ -8,10 +8,6 @@
           fetch="https://github.com/crdroidandroid"
           clone-depth="1" />
 
-  <remote name="gemstone_xiaomi_sm6375"
-          fetch="https://github.com/xiaomi-sm6375-devs"
-          clone-depth="1" />
-
   <remote name="gemstone_charvik"
           fetch="https://github.com/IamCharvik"
           clone-depth="1" />
@@ -55,7 +51,7 @@
   <!-- Custom kernel -->
   <project name="android_kernel_xiaomi_moonstone"
            path="kernel/xiaomi/sm6375"
-           remote="gemstone_xiaomi_sm6375"
+           remote="gemstone_charvik"
            revision="lineage-23.2" />
 
   <!-- Xiaomi hardware support -->
