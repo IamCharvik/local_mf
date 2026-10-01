@@ -19,9 +19,15 @@
   <!-- Replace the stock HalogenOS projects with the Duress-enabled forks. -->
   <remove-project name="android_frameworks_base" />
   <remove-project name="android_packages_apps_Settings" />
+  <remove-project name="android_frameworks_native" />
 
   <project name="android_frameworks_base"
            path="frameworks/base"
+           remote="gemstone_charvik"
+           revision="XOS-16.2" />
+
+  <project name="android_frameworks_native"
+           path="frameworks/native"
            remote="gemstone_charvik"
            revision="XOS-16.2" />
 
