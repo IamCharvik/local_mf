@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="gemstone_xos"
-          fetch="https://github.com/halogenOS"
-          clone-depth="1" />
-
   <remote name="gemstone_crdroid"
           fetch="https://github.com/crdroidandroid"
           clone-depth="1" />
@@ -16,31 +12,37 @@
           fetch="https://github.com/LineageOS"
           clone-depth="1" />
 
-  <!-- Replace the stock HalogenOS projects with the Duress-enabled forks. -->
-  <remove-project name="android_frameworks_base" />
-  <remove-project name="android_packages_apps_Settings" />
-  <remove-project name="android_frameworks_native" />
+  <!-- Replace the stock LineageOS projects with the aos forks. -->
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <remove-project name="LineageOS/android_frameworks_native" />
+  <remove-project name="LineageOS/android_frameworks_av" />
 
   <project name="android_frameworks_base"
            path="frameworks/base"
            remote="gemstone_charvik"
-           revision="XOS-16.2" />
+           revision="aos" />
 
   <project name="android_frameworks_native"
            path="frameworks/native"
            remote="gemstone_charvik"
-           revision="XOS-16.2" />
+           revision="aos" />
+
+  <project name="android_frameworks_av"
+           path="frameworks/av"
+           remote="gemstone_charvik"
+           revision="aos" />
 
   <project name="android_packages_apps_Settings"
            path="packages/apps/Settings"
            remote="gemstone_charvik"
-           revision="XOS-16.2" />
+           revision="aos" />
 
-  <!-- Unified gemstone + SM6375 common device tree (XOS-adapted branch) -->
+  <!-- Unified gemstone + SM6375 common device tree -->
   <project name="Unified_SM6375_Device_Tree_Common-Gemstone"
            path="device/xiaomi/gemstone"
            remote="gemstone_charvik"
-           revision="xos-16.2" />
+           revision="lineage-23.2" />
 
   <!-- Device vendor tree -->
   <project name="proprietary_vendor_xiaomi_gemstone"
