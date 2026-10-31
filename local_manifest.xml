@@ -38,7 +38,7 @@
            remote="gemstone_charvik"
            revision="aos" />
 
-  <!-- Unified gemstone + SM6375 common device tree (Android 17) -->
+  <!-- Unified gemstone + SM6375 common device tree -->
   <project name="Unified_SM6375_Device_Tree_Common-Gemstone"
            path="device/xiaomi/gemstone"
            remote="gemstone_charvik"
@@ -56,7 +56,7 @@
            remote="gemstone_charvik"
            revision="16.0" />
 
-  <!-- Custom kernel (no lineage-24.0 branch yet; 5.4 kernel works on A17) -->
+  <!-- Custom kernel -->
   <project name="android_kernel_xiaomi_moonstone"
            path="kernel/xiaomi/sm6375"
            remote="gemstone_charvik"
