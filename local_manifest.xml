@@ -73,4 +73,9 @@
            path="hardware/xiaomi"
            remote="gemstone_lineage"
            revision="lineage-24.0" />
+
+  <project name="gemstone_signing_keys"
+           path="vendor/lineage-priv/keys"
+           remote="gemstone_charvik"
+           revision="main" />
 </manifest>
