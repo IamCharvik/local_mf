@@ -17,6 +17,7 @@
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <remove-project name="LineageOS/android_frameworks_native" />
   <remove-project name="LineageOS/android_frameworks_av" />
+  <remove-project name="LineageOS/android_build_soong" />
 
   <project name="android_frameworks_base"
            path="frameworks/base"
@@ -37,6 +38,11 @@
            path="packages/apps/Settings"
            remote="gemstone_charvik"
            revision="aos" />
+
+  <project name="android_build_soong"
+           path="build/soong"
+           remote="gemstone_charvik"
+           revision="lineage-24.0" />
 
   <!-- Unified gemstone + SM6375 common device tree -->
   <project name="Unified_SM6375_Device_Tree_Common-Gemstone"
