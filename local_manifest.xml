@@ -18,6 +18,7 @@
   <remove-project name="LineageOS/android_frameworks_native" />
   <remove-project name="LineageOS/android_frameworks_av" />
   <remove-project name="LineageOS/android_build_soong" />
+  <remove-project name="LineageOS/android_device_lineage_sepolicy" />
 
   <project name="android_frameworks_base"
            path="frameworks/base"
@@ -41,6 +42,11 @@
 
   <project name="android_build_soong"
            path="build/soong"
+           remote="gemstone_charvik"
+           revision="lineage-24.0" />
+
+  <project name="android_device_lineage_sepolicy"
+           path="device/lineage/sepolicy"
            remote="gemstone_charvik"
            revision="lineage-24.0" />
 
